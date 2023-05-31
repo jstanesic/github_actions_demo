@@ -7,13 +7,12 @@ def index():
     """ Displays the index page accessible at '/' """
 
     return render_template('index.html')
-# Comment1
 
 @Flask_App.route('/operation_result/', methods=['POST'])
 def operation_result():
     """Route where we send calculator form input"""
 
-    # error = None
+    error = None
     result = None
 
     # request.form looks for:
